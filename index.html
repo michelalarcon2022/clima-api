@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="main.js" defer></script>
+    <link rel="icon" href="images/world.png" />
+    <title>Clima</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="texto-prin">
+        VAMOS A BUSCAR UN CLIMA EN CUALQUIER CIUDAD DEL MUNDO
+      </div>
+      <div class="search-form">
+        <form id="search-form">
+          <div class="searchbox">
+            <input
+              type="text"
+              autocomplete="off"
+              placeholder="¿En que ciudad o pais quieres buscar el clima?"
+              class="search"
+              id="searchbox"
+            />
+          </div>
+        </form>
+      </div>
+      <button id="btnSearch"style="cursor: pointer">Buscar</button>
+      <button id="btnClean" style="cursor: pointer">limpiar</button>
+      <div class="weather-card" id="card">
+        <div class="city" id="city">Neiva, Nei</div>
+        <div class="date" id="date">02/03/2023</div>
+        <div class="temperature">
+          <img src="images/temp-mid.png" class="temp-img" id="temp-img" />
+          <div class="temp" id="temp">20°</div>
+        </div>
+        <div class="weather" id="weather">Sol</div>
+        <div id="icono"></div>
+        <div class="range" id="range">12°c / 18°c</div>
+      </div>
+
+      <table >
+        <thead>
+          <tr>
+            <th>Ciudad</th>
+            <th>Clima</th>
+            <th>Mapa</th>
+          </tr>
+        </thead>
+        <tbody id="table"></tbody>
+      </table>
+    </main>
+    <footer>
+        from
+        <a href="https://www.acmilan.com/en" title="Flaticon"
+          >El mejor equipo del mundo</a
+        >
+      </p>
+      <h3 class="footer__copyright">Derechos reservados &copy; Michel Alarcón</h3>
+    </section>
+    </footer>
+  </body>
+</html>
